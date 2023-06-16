@@ -1,0 +1,120 @@
+1) Remove the element from the set set_ = {"python", "dad", "hai", "malayalam", "madam", "mom"}key = "hai"
+
+set_ = {"python", "dad", "hai", "malayalam", "madam", "mom"}
+set_.remove("hai")
+print(set_)
+
+===========
+o/p:
+{'malayalam', 'madam', 'python', 'mom', 'dad'}
+===========
+
+2. 2)Display non common element from 2 set
+set_1 = {"python", "dad", "hai", "malayalam", "madam", "mom"}
+set_2 = {"python", "dad", "hello","hai", "malayalam", "madam", "mom","c++"}
+
+set_1 = {"python", "dad", "hai", "malayalam", "madam", "mom"}
+set_2 = {"python", "dad", "hello","hai", "malayalam", "madam", "mom","c++"}
+print(set_1.symmetric_difference(set_2))
+
+===========
+o/p:{'c++', 'hello'}
+==========
+
+
+3. Remove duplicate customer details and display final customer details by considering 2 sets
+set1 = {'Rama','Dinga','Seetha','Radha'}
+set2 = {'Rama','swapna','Seetha','swathi'}
+
+set1 = {'Rama','Dinga','Seetha','Radha'}
+set2 = {'Rama','swapna','Seetha','swathi'}
+print(set1.union(set2))
+
+=========
+o/p: 
+{'Radha', 'Seetha', 'Dinga', 'swathi', 'swapna', 'Rama'}
+=========
+
+
+4. find common elements in three list using sets
+num1 = [1, 5, 10, 20, 40, 80]
+num2 = [6, 7, 20, 80, 100]
+num3 = [3, 4, 15, 20, 30, 70, 80, 120]
+
+num1 = [1, 5, 10, 20, 40, 80]
+num2 = [6, 7, 20, 80, 100]
+num3 = [3, 4, 15, 20, 30, 70, 80, 120]
+
+set1=set(num1)
+set2=set(num2)
+set3=set(num3)
+
+print(set1.intersection(set2,set3))
+
+======
+o/p: {80, 20}
+======
+5. Find minimum and maximum in value in set
+set={2,45,67,56,89,78}
+
+print(max(set) ,min(set))
+
+===
+or
+===
+
+set={2,45,67,56,89,78}
+numbers=list(set)
+maximum = numbers[0]
+minimum = numbers[0]
+
+for number in numbers:
+    if number > maximum:
+        maximum = number
+    if number < minimum:
+        minimum = number
+
+print("Maximum value:", maximum)
+print("Minimum value:", minimum)
+
+==============
+o/p: Maximum value: 89
+     Minimum value: 2
+===============
+6. write a program to print strings in the set
+
+set={'corejava','python','sql', 'powerbi'}
+print ("strings in the set")
+for string in set:
+  print(string)
+=========
+o/p: strings in the set are
+sql
+python
+corejava
+powerbi
+
+===========================
+
+7. list1 = [1, 2, 3, 4, 5, 6]
+list2 = [4, 5, 6, 7, 8]
+
+Output : Missing values in list1 = {8, 7}          
+Additional values in list1 = {1, 2, 3}       
+Missing values in list2 = {1, 2, 3}         
+Additional values in list2 = {7, 8}
+
+list1 = [1, 2, 3, 4, 5, 6]
+list2 = [4, 5, 6, 7, 8]
+a1=set(list1)
+b2=set(list2)
+
+print(b2.difference(a1))
+
+=======
+o/p: {8, 7}
+======
+
+
+
+
